@@ -1,0 +1,102 @@
+.header{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: rgba(14, 231, 130, 0.911);
+    border-bottom-left-radius: 50%;
+    height: 300px;
+}
+.header h1{
+    margin-top: 50px;
+    margin-bottom: -10px;
+    margin-left: 250px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.header p{
+    margin-left: 250px;
+}
+    
+    
+ .icon{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 50px;
+    font-size: 50px;
+    left: 1300px;
+    bottom: 250px;
+}
+#infor{
+   background-color: rgb(68, 112, 151); 
+   color: rgb(236, 134, 1);
+   border-radius: 50%;
+   height: 80px;
+   line-height: 80px;
+   text-align: center;
+   margin-block: 20px;
+}
+#content{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+    
+
+
+#left .list-boxs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#left .list-boxs .box{
+    width: 300px;
+    text-align: center;
+    position: relative;
+    box-shadow: 2px 2px 5px black;
+    margin: 10px;
+    
+}
+#left .list-boxs .box img{
+    width:100%;
+    height: 236px;
+}
+#left .list-boxs .box p{
+    display: block;
+    margin: 0;
+    background-color: aqua;
+}
+
+.comment {
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+    padding: 16px;
+    box-sizing: border-box;
+    border: rgb(255, 208, 80) 2px solid;
+}
+#right{
+    width: 30%;
+    background-color: rgb(32, 160, 203);
+    
+}
+.list-comments{
+    width: 100%;
+    background-color: chartreuse;
+}
+#left{
+    width: 65%;
+    background-color: lightpink;
+}
+
+
+footer{
+    background-color: rgb(108, 184, 242);
+    color: blueviolet;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+

@@ -1,0 +1,65 @@
+body{
+    background-color: #FACFCF;
+}
+.web{
+    display: flex;
+    height: 100px;
+    position: relative;
+}
+header{
+    height: 120px;
+    position: fixed;
+    font-size: 30px;
+    width: 100%;
+    background-color: #FACFCF;
+    left: 200px;
+    top: -20px;
+    z-index: 2;
+}
+
+.container {
+    display: flex;
+   
+}
+.container .menu {
+    
+    display: flex;
+    position: fixed;
+    width: 960px;
+    top: 100px;
+    left: 200px;
+    z-index: 2;
+}
+.container .menu1 {
+    
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 155px;
+    left: 200px;
+    
+}
+.menu .item {
+    width: 20%;
+    text-align: center;
+    background-color: #420000;
+    color: white;
+    height: 50px;
+    line-height: 50px;
+   
+}
+.menu1 .item {
+    width: 204px;
+    background-color: #9D6F68;
+    color: white;
+    height: 40px;
+    line-height: 40px;
+   
+}
+.content{
+    width: 700px;
+    position: relative;
+    left: 420px;
+    top: 150px;
+    
+}
