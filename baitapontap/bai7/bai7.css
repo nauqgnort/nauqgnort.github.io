@@ -1,0 +1,178 @@
+body, *{
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    margin: 20px 10px 10px 10px;
+}
+header .title{
+    display: inline-block;
+    background-color: rgb(252, 182, 166);
+    border-radius: 4px;
+    font-size: 20px;
+    font-family: "Roboto";
+    margin-right: auto;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+header .menu{
+    display: flex;
+}
+header .menu .item{
+    padding: 10px 10px;
+    text-align: center;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s ease;
+    
+}
+header .menu .item a{
+    color: black;
+    text-decoration: none;
+}
+header .menu .item:hover{
+    background-color: rgb(183, 182, 182);
+}
+.imagine img{
+    width: 1450px;
+    margin-left: 10px;
+    margin-right: 10px;
+    position: relative;
+}
+.imagine .decription{
+    position: relative;
+    left: 50px;
+    top: -900px;
+    font-size: 30px;
+    color: white;
+}
+.imagine .decription button{
+    width: 120px;
+    height: 45px;
+    border-radius: 6px;
+    background-color: #ffdddd;
+    font-weight: bold;
+    text-decoration: underline;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+.imagine .decription button a{
+    color: black;
+}
+.imagine .decription button:hover{
+    background-color: rgb(109, 133, 109);
+}
+.activity h2{
+    text-align: center;
+}
+.trainer h2{
+    text-align: center;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 130px;
+    
+}
+.container .content{
+    width: 30%;
+    height: 580px;
+    margin: 10px;
+    box-shadow: 2px 2px 5px black;
+    position: relative;
+}
+.container .content img{
+    width: 100%;
+}
+.container .content h3,p{
+    padding: 20px;
+}
+.container .content button{
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 40px;
+    background-color:#ffdddd ;
+    border-radius: 4px;
+    border: none;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.container .content button:hover{
+    background-color: rgb(174, 169, 169);
+}
+.container_activity{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 130px;
+    height: 800px;
+    
+}
+.container_activity .content_activity{
+    width: 30%;
+    height: 580px;
+    margin: 10px 10px 30px 10px
+    
+}
+.container_activity .content_activity img{
+    width: 100%;
+}
+.container_activity .content_activity h3,p{
+    padding: 10px;
+}
+.container_activity .content_activity button{
+    
+    margin-left: 10px;
+    width: 120px;
+    height: 40px;
+    background-color:#ffdddd ;
+    border-radius: 4px;
+    border: none;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.container_activity .content_activity button:hover{
+    background-color: rgb(174, 169, 169);
+}
+.contact h2{
+    text-align: center;
+    margin-top: 130px;
+}
+.item_form input,textarea{
+    width: 1400px;
+    padding: 8px;
+    margin: 10px;
+    height: 30px;
+}
+.item_form button{
+    text-align: center;
+    width: 1420px;
+    padding: 8px;
+    margin: 10px;
+    background-color: #ffdddd;
+    border-radius: 4px ;
+    border: none;
+}
+footer{
+    text-align: center;
+    margin-top: 30px;
+    height: 167px;
+    width: 1430px;
+    background-color: #ffdddd;
+}
+footer button{
+    padding: 8px 16px;
+    border-radius: 16px;
+    border: none;
+    cursor: pointer;
+}

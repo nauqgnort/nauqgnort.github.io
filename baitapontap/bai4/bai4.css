@@ -1,0 +1,113 @@
+body{
+    
+    background-color: rgb(153, 144, 144);
+}
+header{
+    background-color: pink;
+    height: 50px;
+    border: 2px solid white;
+}
+.container{
+    display: flex;
+    margin-top: 10px;
+}
+.container .left{
+    width: 60%;
+    
+}
+.container .left .box1{
+    height: 300px;
+    border: 2px solid white;
+    background-color: aquamarine;
+}
+.container .left .under{
+    display: flex;
+}
+.container .left .left-under{
+    width: 50%;
+    margin-right: 10px;
+}
+.container .left .left-under .box2{
+    height: 150px;
+    background-color: brown;
+    border: 2px solid white;
+}
+.container .left .left-under .box3{
+    height: 150px;
+    background-color: rgb(42, 58, 165);
+    border: 2px solid white;
+}
+.container .left .right-under{
+    width: 50%;
+    margin-left: 10px;
+}
+.container .left .right-under .box4{
+    height: 320px;
+    background-color: rgb(3, 230, 64);
+    border: 2px solid white;
+    
+}
+.container .right{
+    width: 40%;
+    
+    margin-left: 20px;
+}
+.container .right .top{
+    display: flex;
+}
+.container .right .box5{
+    width: 70%;
+    background-color: deeppink;
+    height: 150px;
+    margin-right: 10px;
+    border: 2px solid white;
+}.container .right .box6{
+    width: 30%;
+    background-color: rgb(255, 20, 20);
+    height: 150px;
+    margin-left: 10px;
+    border: 2px solid white;
+}
+.container .right .box7{
+    width: 100%;
+    background-color: yellow;
+    height: 80px;
+    border: 2px solid white;
+}
+.container .right .middle{
+    display: flex;
+    justify-content: space-between 10px;
+}   
+.container .right .middle .box8{
+    width: 33%;
+    height: 300px;
+    margin-right: 20px;
+    border: 2px solid white;
+    background-color: crimson;
+}
+.container .right .middle .box9{
+    width: 33%;
+    height: 300px;
+    margin-right: 20px;
+    border: 2px solid white;
+    background-color: rgb(197, 20, 220);
+}
+.container .right .middle .box10{
+    width: 33%;
+    height: 300px;
+    border: 2px solid white;
+    background-color: rgb(0, 208, 255);
+}
+.container .right .box11{
+    width: 100%;
+    background-color: rgb(255, 247, 0);
+    height: 48px;
+    border: 2px solid white;
+}
+footer{
+    margin-top: 20px;
+    width: 100%;
+    border: 2px solid white;
+    background-color: black;
+    height: 50px;
+}

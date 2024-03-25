@@ -1,0 +1,53 @@
+
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: palevioletred;
+    height: 150px;
+    color: white;
+    font-size: 20px;
+}
+nav{
+    background-color: blue;
+    height: 80px;
+    color: white;
+    font-size: 20px;
+
+}
+.container{
+    display: flex;
+    height: 450px;
+    font-size: 20px;
+
+}
+.container .left{
+    width: 25%;
+    background-color: rgb(108, 247, 108);
+    color: white;
+    font-size: 20px;
+
+}
+.container .right{
+    width: 25%;
+    background-color: rgb(249, 144, 106);
+    color: white;
+    font-size: 20px;
+
+   
+}
+.container .center{
+    width: 50%;
+    background-color: chartreuse;
+    color: white;
+    font-size: 20px;
+
+}
+footer{
+    background-color: rgb(189, 58, 246);
+    height: 100px;
+    color: white;
+    font-size: 20px;
+
+}

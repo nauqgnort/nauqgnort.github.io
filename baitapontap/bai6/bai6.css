@@ -1,0 +1,28 @@
+.container{
+    display: flex;
+    
+}
+.container .box1{
+    margin-right: auto;
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+}
+.container .box2{
+    
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+}
+.container .box3{
+    
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+}
+.container .box4{
+    margin-left: auto;
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+}
