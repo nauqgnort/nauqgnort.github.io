@@ -1,54 +1,286 @@
-body, *{
-    margin: 0;
-    padding: 0;
+.body_page {
+    width: 100%;
 }
-header{
+
+header {
     display: flex;
     margin: 20px 10px 10px 10px;
 }
-header .title{
+
+header .title {
     display: inline-block;
     background-color: rgb(252, 182, 166);
     border-radius: 4px;
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        padding: 20px;
+    }
+
+    header {
+        display: flex;
+        margin: 20px 10px 10px 10px;
+    }
+
+    header .title {
+        display: inline-block;
+        background-color: rgb(252, 182, 166);
+        border-radius: 4px;
+        font-size: 20px;
+        font-family: "Roboto";
+        margin-right: auto;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    header .menu {
+        display: flex;
+    }
+
+    header .menu .item {
+        padding: 10px 10px;
+        text-align: center;
+        cursor: pointer;
+        background-color: white;
+        color: black;
+        transition: background-color 0.3s ease;
+
+    }
+
+    header .menu .item a {
+        color: black;
+        text-decoration: none;
+    }
+
+    header .menu .item:hover {
+        background-color: rgb(183, 182, 182);
+    }
+
+    .imagine {
+        width: 100%;
+    }
+
+    .imagine img {
+        width: 100%;
+    }
+
+    .imagine .decription {
+        position: relative;
+        width: fit-content;
+        left: 50px;
+        top: -900px;
+        font-size: 30px;
+        color: white;
+    }
+
+    .imagine .decription button {
+        width: 120px;
+        height: 45px;
+        border-radius: 6px;
+        background-color: #ffdddd;
+        font-weight: bold;
+        text-decoration: underline;
+        transition: background-color 0.3s ease;
+        cursor: pointer;
+    }
+
+    .imagine .decription button a {
+        color: black;
+    }
+
+    .imagine .decription button:hover {
+        background-color: rgb(109, 133, 109);
+    }
+
+    .activity h2 {
+        text-align: center;
+    }
+
+    .trainer h2 {
+        text-align: center;
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        position: relative;
+        margin-bottom: 130px;
+
+    }
+
+    .container .content {
+        width: 30%;
+        height: 580px;
+        margin: 10px;
+        box-shadow: 2px 2px 5px black;
+        position: relative;
+    }
+
+    .container .content img {
+        width: 100%;
+    }
+
+    .container .content h3,
+    p {
+        padding: 20px;
+    }
+
+    .container .content button {
+        position: absolute;
+        left: 50%;
+        bottom: 10px;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        height: 40px;
+        background-color: #ffdddd;
+        border-radius: 4px;
+        border: none;
+        text-decoration: underline;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .container .content button:hover {
+        background-color: rgb(174, 169, 169);
+    }
+
+    .container_activity {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        position: relative;
+        margin-bottom: 130px;
+        height: 800px;
+
+    }
+
+    .container_activity .content_activity {
+        width: 30%;
+        height: 580px;
+        margin: 10px 10px 30px 10px
+    }
+
+    .container_activity .content_activity img {
+        width: 100%;
+    }
+
+    .container_activity .content_activity h3,
+    p {
+        padding: 10px;
+    }
+
+    .container_activity .content_activity button {
+
+        margin-left: 10px;
+        width: 120px;
+        height: 40px;
+        background-color: #ffdddd;
+        border-radius: 4px;
+        border: none;
+        text-decoration: underline;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .container_activity .content_activity button:hover {
+        background-color: rgb(174, 169, 169);
+    }
+
+    .contact h2 {
+        text-align: center;
+        margin-top: 130px;
+    }
+
+    .item_form {
+        width: 98%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .item_form input {
+        width: 100%;
+        padding-block: 8px;
+        text-indent: 8px;
+        margin-top: 10px;
+        height: 30px;
+    }
+
+    .item_form .btn-send-message {
+        text-align: center;
+        background-color: #ffdddd;
+        border-radius: 4px;
+        box-sizing: content-box;
+        border: none;
+    }
+
+    footer {
+        text-align: center;
+        margin-top: 30px;
+        height: 167px;
+        width: 100%;
+        background-color: #ffdddd;
+    }
+
+    footer button {
+        padding: 8px 16px;
+        border-radius: 16px;
+        border: none;
+        cursor: pointer;
+    }
+
     font-size: 20px;
     font-family: "Roboto";
     margin-right: auto;
     padding-left: 8px;
     padding-right: 8px;
 }
-header .menu{
+
+header .menu {
     display: flex;
 }
-header .menu .item{
+
+header .menu .item {
     padding: 10px 10px;
     text-align: center;
     cursor: pointer;
     background-color: white;
     color: black;
     transition: background-color 0.3s ease;
-    
+
 }
-header .menu .item a{
+
+header .menu .item a {
     color: black;
     text-decoration: none;
 }
-header .menu .item:hover{
+
+header .menu .item:hover {
     background-color: rgb(183, 182, 182);
 }
-.imagine img{
-    width: 1450px;
+
+.imagine img {
+    width: 100%;
     margin-left: 10px;
     margin-right: 10px;
-    position: relative;
+
 }
-.imagine .decription{
+
+.imagine .decription {
     position: relative;
+    width: fit-content;
     left: 50px;
     top: -900px;
     font-size: 30px;
     color: white;
 }
-.imagine .decription button{
+
+.imagine .decription button {
     width: 120px;
     height: 45px;
     border-radius: 6px;
@@ -58,119 +290,138 @@ header .menu .item:hover{
     transition: background-color 0.3s ease;
     cursor: pointer;
 }
-.imagine .decription button a{
+
+.imagine .decription button a {
     color: black;
 }
-.imagine .decription button:hover{
+
+.imagine .decription button:hover {
     background-color: rgb(109, 133, 109);
 }
-.activity h2{
+
+.activity h2 {
     text-align: center;
 }
-.trainer h2{
+
+.trainer h2 {
     text-align: center;
 }
-.container{
+
+.container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    position: relative;
     margin-bottom: 130px;
-    
+
 }
-.container .content{
+
+.container .content {
     width: 30%;
-    height: 580px;
+    height: 630px;
     margin: 10px;
     box-shadow: 2px 2px 5px black;
-    position: relative;
+
 }
-.container .content img{
+
+.container .content img {
     width: 100%;
 }
-.container .content h3,p{
+
+.container .content h3,
+p {
     padding: 20px;
 }
-.container .content button{
-    position: absolute;
-    left: 50%;
-    bottom: 10px;
-    transform: translate(-50%, -50%);
+
+.container .content button {
+    justify-content: center;
     width: 80%;
     height: 40px;
-    background-color:#ffdddd ;
+    background-color: #ffdddd;
     border-radius: 4px;
     border: none;
     text-decoration: underline;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-.container .content button:hover{
+
+.container .content button:hover {
     background-color: rgb(174, 169, 169);
 }
-.container_activity{
+
+.container_activity {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    position: relative;
+
     margin-bottom: 130px;
     height: 800px;
-    
+
 }
-.container_activity .content_activity{
+
+.container_activity .content_activity {
     width: 30%;
     height: 580px;
     margin: 10px 10px 30px 10px
-    
 }
-.container_activity .content_activity img{
+
+.container_activity .content_activity img {
     width: 100%;
 }
-.container_activity .content_activity h3,p{
+
+.container_activity .content_activity h3,
+p {
     padding: 10px;
 }
-.container_activity .content_activity button{
-    
+
+.container_activity .content_activity button {
+
     margin-left: 10px;
     width: 120px;
     height: 40px;
-    background-color:#ffdddd ;
+    background-color: #ffdddd;
     border-radius: 4px;
     border: none;
     text-decoration: underline;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-.container_activity .content_activity button:hover{
+
+.container_activity .content_activity button:hover {
     background-color: rgb(174, 169, 169);
 }
-.contact h2{
+
+.contact h2 {
     text-align: center;
     margin-top: 130px;
 }
-.item_form input,textarea{
-    width: 1400px;
+
+.item_form input,
+textarea {
+    width: 96%;
     padding: 8px;
     margin: 10px;
     height: 30px;
 }
-.item_form button{
+
+.item_form button {
     text-align: center;
-    width: 1420px;
+    width: 97%;
     padding: 8px;
     margin: 10px;
     background-color: #ffdddd;
-    border-radius: 4px ;
+    border-radius: 4px;
     border: none;
 }
-footer{
+
+footer {
     text-align: center;
     margin-top: 30px;
-    height: 167px;
-    width: 1430px;
+    height: 200px;
+    width: 100%;
     background-color: #ffdddd;
 }
-footer button{
+
+footer button {
     padding: 8px 16px;
     border-radius: 16px;
     border: none;

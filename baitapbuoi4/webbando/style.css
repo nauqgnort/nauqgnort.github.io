@@ -1,0 +1,302 @@
+body,
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.topmenu {
+    display: flex;
+    background-color: orange;
+    width: 100%;
+    position: fixed;
+    z-index: 4;
+}
+
+.topmenu .logo {
+    font-size: 3.8rem;
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+}
+
+.topmenu .menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.6rem;
+    line-height: 130px;
+    margin-left: 10px;
+}
+
+.topmenu .menu {
+    margin-right: auto;
+}
+
+.topmenu .icon a {
+    color: white;
+    text-decoration: none;
+    line-height: 130px;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.img_header img {
+    width: 100%;
+}
+
+.img_header .title {
+    z-index: 1;
+    position: relative;
+    width: fit-content;
+    left: 50px;
+    top: -500px;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
+
+.img_header .title h1 {
+    font-size: 100px;
+}
+
+.img_header button {
+    border-radius: 30px;
+    width: 120px;
+    height: 40px;
+    color: white;
+    background-color: black;
+    border: none;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.img_header button:hover {
+    background-color: orangered;
+}
+
+.content {
+    width: 100%;
+}
+
+.content .content_title {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.content .product_list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    cursor: pointer;
+}
+
+.product {
+    text-align: center;
+}
+
+.product img {
+    max-width: 100%;
+}
+
+.product h3 {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.advertise_list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.advertise_list .advertise {
+    background-image: url('https://th.bing.com/th?id=OIF.vYytkcfjxPUPj%2byOj0fmJw&w=333&h=187&c=7&r=0&o=5&dpr=1.3&pid=1.7');
+    height: 300px;
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 20px;
+    background-size: cover;
+    border-radius: 10px;
+    color: chocolate;
+    font-size: 20px;
+}
+
+.advertise_list .advertise button {
+    padding: 10px;
+    margin-top: 20px;
+    background-color: orangered;
+    color: white;
+    border: none;
+    border-radius: 30px;
+}
+
+.best_seller {
+    width: 100%;
+    margin-top: 100px;
+}
+
+.best_seller .title_bs {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.best_seller .product_sell_list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+    cursor: pointer;
+}
+
+.product_sell {
+    width: calc(100% - 40px);
+    margin: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.product_sell img {
+    max-width: 100%;
+}
+
+.product_sell p,
+.product_sell h3 {
+    margin: 0;
+}
+
+.commit {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.commit .commit_list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 80px;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.commit .commit_list .commit_item {
+    flex-basis: calc(25% - 20px);
+    max-width: calc(25% - 20px);
+}
+
+.commit .commit_list .commit_item .commit_icon {
+    color: orangered;
+    font-size: 50px;
+}
+
+.bottom {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    color: white;
+    background-image: url('https://lechewang.github.io/kitter/assets/images/cta-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 560px
+}
+
+.bottom img{
+    flex: 1;
+}
+
+.bottom .title_bottom {
+    flex: 1;
+    padding-left: 50px;
+    color: black;
+}
+
+.bottom .title_bottom button{
+    margin-top: 30px;
+    color: white;
+    background-color: black;
+    padding: 10px 20px 10px 20px;
+    border: none;
+    border-radius: 30px;
+}
+
+.brand {
+    text-align: center;
+    margin-top: 100px;
+}
+.brand_title {
+    text-align: center;
+}
+
+.brand_list {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 10px;
+    overflow-x: auto;
+    padding: 10px;
+}
+
+.brand_logo {
+    flex: 0 0 auto;
+    width: 200px;
+}
+
+.brand img {
+    width: 100%;
+    height: auto;
+}
+.footer {
+    margin-top: 100px;
+    display: flex;
+    background-image: url('https://lechewang.github.io/kitter/assets/images/footer-bg.jpg');
+    height: 400px;
+}
+
+.left {
+    margin-top: 200px;
+    flex: 40%;
+    padding-left: 50px;
+    color: white;
+}
+
+.left .left_icon {
+    display: flex;
+    
+}
+
+.left_icon i {
+    font-size: 30px;
+    margin: 10px;
+}
+
+.right {
+    margin-top: 200px;
+    flex: 60%;
+}
+
+.container {
+    display: flex;
+}
+
+.column {
+    color: white;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+.column a{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
