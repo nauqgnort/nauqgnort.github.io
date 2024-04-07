@@ -1,0 +1,184 @@
+body,
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.top {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+header .logo {
+    width: 30%;
+}
+
+header ul.top_menu {
+    display: flex;
+    list-style: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    width: 400px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+.column li {
+    display: block;
+}
+
+.column li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #000;
+}
+
+.column::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+header ul.top_menu li {
+    padding: 10px;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    margin-top: 20px;
+    min-height: 200px;
+}
+
+.banner .banner_left {
+    width: 50%;
+    
+    
+}
+
+.banner .banner_left h1 {
+    color: rgb(101, 158, 255);
+    transition: color 1s;
+}
+.banner .banner_left h1:hover{
+    color: #000;
+}
+
+.banner .banner_left p{
+    width: 70%;
+}
+
+.banner .banner_right {
+    width: 50%;
+}
+
+.content{
+    background-color: rgb(233, 231, 231);
+    text-align: center;
+    padding: 10px;
+}
+
+.content .country_list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 40px;
+
+}
+
+.content .country_list .country {
+    width: calc(30% - 20px);
+    height: 300px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    margin: 10px;
+    transition: box-shadow 0.3s ease; 
+}
+
+.content .country_list .country:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.content .country_list .country img {
+    width: 30%;
+    height: 20%;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+.content .country_list .country h1,p {
+    padding: 20px;
+}
+
+.introduce{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    margin-top: 100px;
+    min-height: 200px;
+}
+
+.introduce_left{
+    width: 50%;
+    
+}
+
+.introduce_list{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.introduction {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 20px;
+    flex-shrink: 0;
+}
+
+.introduction img {
+    max-width: 30%;
+    height: auto;
+}
+
+.introduce_right{
+    width: 50%;
+}
