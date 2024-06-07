@@ -39,7 +39,7 @@
       document
         .getElementById("signupForm")
         .addEventListener("submit", function (event) {
-          event.preventDefault(); // Ngăn chặn form gửi bình thường
+          event.preventDefault();
           const newUsername = document
             .getElementById("newUsername")
             .value.trim();
@@ -48,11 +48,11 @@
             .value.trim();
 
           if (newUsername && newPassword) {
-            // Lưu thông tin đăng ký vào localStorage
+
             localStorage.setItem("username", newUsername);
             localStorage.setItem("password", newPassword);
 
-            // Lưu object tài khoản vào localStorage
+            
             localStorage.setItem(
               "account_login",
               JSON.stringify({ username: newUsername, password: newPassword })
