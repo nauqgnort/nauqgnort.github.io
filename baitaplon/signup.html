@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng ký</title>
+    <link rel="stylesheet" href="./signup.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form class="signupForm" id="signupForm">
+        <h1>Đăng ký</h1>
+        <div class="formText">
+          <label for="newUsername">Tên người dùng:</label>
+          <input type="text" id="newUsername" />
+        </div>
+        <div class="formText">
+          <label for="newPassword">Mật khẩu:</label>
+          <input type="password" id="newPassword" />
+        </div>
+        <button type="submit">Đăng ký</button>
+        <span>Đã có tài khoản? Đăng nhập <a href="login.html">tại đây</a></span>
+      </form>
+    </div>
+    <script>
+      const formInputs = document.querySelectorAll(".formText input");
+      const formLabels = document.querySelectorAll(".formText label");
+      for (let i = 0; i < formInputs.length; i++) {
+        formInputs[i].addEventListener("mouseover", function () {
+          formLabels[i].classList.add("focus");
+        });
+        formInputs[i].addEventListener("mouseout", function () {
+          if (formInputs[i].value === "") {
+            formLabels[i].classList.remove("focus");
+          }
+        });
+      }
+
+      document
+        .getElementById("signupForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault(); // Ngăn chặn form gửi bình thường
+          const newUsername = document
+            .getElementById("newUsername")
+            .value.trim();
+          const newPassword = document
+            .getElementById("newPassword")
+            .value.trim();
+
+          if (newUsername && newPassword) {
+            // Lưu thông tin đăng ký vào localStorage
+            localStorage.setItem("username", newUsername);
+            localStorage.setItem("password", newPassword);
+
+            // Lưu object tài khoản vào localStorage
+            localStorage.setItem(
+              "account_login",
+              JSON.stringify({ username: newUsername, password: newPassword })
+            );
+
+            // Kiểm tra
+            console.log("Tên người dùng mới được lưu:", newUsername);
+            console.log("Mật khẩu mới được lưu:", newPassword);
+
+            // Thông báo cho người dùng
+            alert("Đăng ký thành công.");
+          } else {
+            alert("Vui lòng điền đầy đủ thông tin.");
+          }
+        });
+    </script>
+  </body>
+</html>
