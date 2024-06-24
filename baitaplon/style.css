@@ -220,7 +220,7 @@ h1 {
   border: none;
   padding: 10px;
   cursor: pointer;
-  border-radius: 50%; /* Đặt border-radius thành 50% */
+  border-radius: 50%;
   opacity: 0.7;
   transition: opacity 0.3s ease;
   width: 50px;
@@ -228,11 +228,11 @@ h1 {
 
 #scrollToTopBtn:hover {
   background-color: #858585;
-  opacity: 1; /* Khi hover, độ mờ là 1 */
+  opacity: 1;
 }
 
 .cart {
-  display: none; /* Ban đầu ẩn giỏ hàng */
+  display: none;
   position: fixed;
   top: 0;
   right: 0;
