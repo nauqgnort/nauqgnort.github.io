@@ -5,6 +5,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const menLink = document.getElementById("men-link");
   const womenLink = document.getElementById("women-link");
   const kidsLink = document.getElementById("kids-link");
+  const saleLink = document.getElementById("sale-link");
+  const hotLink = document.getElementById("hot-link");
   const cartItems = document.getElementById("cart-items");
   const cartContent = document.getElementById("cart-content");
   const clearCartBtn = document.getElementById("clear-cart");
@@ -78,6 +80,8 @@ document.addEventListener("DOMContentLoaded", function () {
         "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b7d9211c-26e7-431a-ac24-b0540fb3c00f/air-force-1-07-shoes-WrLlWX.png",
       price: "2,929,000 VND",
       brand: "nike",
+      sale: true,
+      hot: true,
     },
     {
       name: "Air Jordan 1 Low",
@@ -86,6 +90,8 @@ document.addEventListener("DOMContentLoaded", function () {
         "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/1c0c434c-9802-4556-89c7-a8600b2828d8/air-jordan-1-low-shoes-lFCSjp.png",
       price: "3,239,000 VND",
       brand: "nike",
+      sale: true,
+      hot: false,
     },
     {
       name: "Air Jordan 1 Low Method of Make",
@@ -94,6 +100,8 @@ document.addEventListener("DOMContentLoaded", function () {
         "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/ba211a1e-cda0-4296-b3fa-cdb52c0c4985/air-jordan-1-low-method-of-make-shoes-m6FCTq.png",
       price: "3,959,000 VND",
       brand: "nike",
+      sale: true,
+      hot: false,
     },
     {
       name: "Air Jordan 1 High Method of Make",
@@ -102,6 +110,8 @@ document.addEventListener("DOMContentLoaded", function () {
         "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/e5700856-4bfe-4282-81e1-cd5dee98b658/air-jordan-1-high-method-of-make-shoes-wvNP62.png",
       price: "4,539,000 VND",
       brand: "nike",
+      sale: false,
+      hot: true,
     },
     {
       name: "Nike Blazer Mid '77 Vintage",
@@ -110,6 +120,8 @@ document.addEventListener("DOMContentLoaded", function () {
         "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/fb7eda3c-5ac8-4d05-a18f-1c2c5e82e36e/blazer-mid-77-vintage-shoes-dNWPTj.png",
       price: "2,929,000 VND",
       brand: "nike",
+      sale: true,
+      hot: false,
     },
     {
       name: "Nike Blazer Mid '77 Premium",
@@ -118,6 +130,8 @@ document.addEventListener("DOMContentLoaded", function () {
         "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/68e31b88-19a5-435f-acc1-172b67e2f927/blazer-mid-77-shoes-0dJRSm.png",
       price: "3,239,000 VND",
       brand: "nike",
+      sale: false,
+      hot: true,
     },
     {
       name: "Jordan 1 Low Alt SE",
@@ -126,6 +140,8 @@ document.addEventListener("DOMContentLoaded", function () {
         "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/ebaad3f6-0646-453b-b61a-f71dd83de9be/jordan-1-low-alt-se-shoes-C6tC2F.png",
       price: "1,529,000 VND",
       brand: "nike",
+      sale: true,
+      hot: false,
     },
     {
       name: "Jordan 1 Low Alt",
@@ -134,6 +150,8 @@ document.addEventListener("DOMContentLoaded", function () {
         "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/492a454b-39d6-4639-8172-1157b543f539/jordan-1-low-alt-shoes-jNQKZv.png",
       price: "1,399,000 VND",
       brand: "nike",
+      sale: false,
+      hot: true,
     },
 
     {
@@ -143,6 +161,8 @@ document.addEventListener("DOMContentLoaded", function () {
         "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/3bbecbdf584e40398446a8bf0117cf62_9366/Giay_Samba_OG_trang_B75806_01_standard.jpg",
       price: "2.700.000",
       brand: "adidas",
+      sale: true,
+      hot: false,
     },
     {
       name: "STAN SMITH LUX",
@@ -151,6 +171,8 @@ document.addEventListener("DOMContentLoaded", function () {
         "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/e54cbb2a58704d0bb3bf1cf795c8e15a_9366/Giay_Stan_Smith_Lux_trang_IF8844_01_standard.jpg",
       price: "3.800.000 VND",
       brand: "adidas",
+      sale: false,
+      hot: true,
     },
     {
       name: "RESPONSE CL",
@@ -159,6 +181,8 @@ document.addEventListener("DOMContentLoaded", function () {
         "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/6044dd9dea9948f49524adaa00b9338b_9366/Giay_Response_CL_Xam_GZ1561_01_standard.jpg",
       price: "3.300.000 VND",
       brand: "adidas",
+      sale: true,
+      hot: false,
     },
     {
       name: "ULTRABOOST 1.0",
@@ -167,6 +191,8 @@ document.addEventListener("DOMContentLoaded", function () {
         "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/bad84b99019d4386a67cd03ecc51c0a4_9366/Giay_Ultraboost_1.0_DJen_HQ4201_HM1.jpg",
       price: "4.500.000 VND",
       brand: "adidas",
+      sale: true,
+      hot: true,
     },
     {
       name: "GAZELLE",
@@ -175,6 +201,8 @@ document.addEventListener("DOMContentLoaded", function () {
         "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/340aeb9ac43847fea000a8da0182b561_9366/GAZELLE_B41645_01_standard.jpg",
       price: "2.500.000 VND",
       brand: "adidas",
+      sale: true,
+      hot: false,
     },
     {
       name: "FORUM BOLD STRIPES SHOES",
@@ -183,6 +211,8 @@ document.addEventListener("DOMContentLoaded", function () {
         "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/08a216d694bd4effa5a315de597d8964_9366/Forum_Bold_Stripes_Shoes_White_ID0404_01_standard.jpg",
       price: "2,600,000 VND",
       brand: "adidas",
+      sale: false,
+      hot: false,
     },
     {
       name: "STAN SMITH PF SHOES",
@@ -191,6 +221,9 @@ document.addEventListener("DOMContentLoaded", function () {
         "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/8514e5540bca4f32bebea833b6aca593_9366/Stan_Smith_PF_Shoes_White_IE0450_01_standard.jpg",
       price: "3,000,000 VND",
       brand: "adidas",
+      sale: true,
+      hot: true,
+      hot: true,
     },
     {
       name: "STAR WARS GRAND COURT 2.0 SHOES KIDS",
@@ -199,6 +232,8 @@ document.addEventListener("DOMContentLoaded", function () {
         "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/b2d89612be774e3c8aab0eed44a54dcf_9366/Star_Wars_Grand_Court_2.0_Shoes_Kids_White_IH8035_01_standard.jpg",
       price: "1,200,000 VND",
       brand: "adidas",
+      sale: true,
+      hot: false,
     },
     {
       name: "TENSAUR SPORT TRAINING LACE SHOES",
@@ -207,6 +242,8 @@ document.addEventListener("DOMContentLoaded", function () {
         "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/0831ff349ce042e084d1ae91010a1c30_9366/Tensaur_Sport_Training_Lace_Shoes_White_GW6438_01_standard.jpg",
       price: "1,000,000 VND",
       brand: "adidas",
+      sale: false,
+      hot: false,
     },
 
     {
@@ -216,6 +253,8 @@ document.addEventListener("DOMContentLoaded", function () {
         "https://bizweb.dktcdn.net/thumb/1024x1024/100/140/774/products/giay-vans-knu-skool-black-true-white-vn0009qc6bt-1.jpg?v=1687606964757",
       price: "2.400.000 VND",
       brand: "vans",
+      sale: true,
+      hot: true,
     },
     {
       name: "VANS CHECKERBOARD SLIP-ON CLASSIC BLACK/OFF WHITE",
@@ -224,6 +263,8 @@ document.addEventListener("DOMContentLoaded", function () {
         "https://bizweb.dktcdn.net/thumb/1024x1024/100/140/774/products/vans-slip-on-checkerboard-black-off-white-vn000eyebww-1.png",
       price: "1.377.500 VND",
       brand: "vans",
+      sale: false,
+      hot: false,
     },
     {
       name: "VANS CLASSIC SK8-HI BLACK/WHITE",
@@ -232,6 +273,8 @@ document.addEventListener("DOMContentLoaded", function () {
         "https://bizweb.dktcdn.net/thumb/1024x1024/100/140/774/products/vans-sk8-hi-classic-black-white-vn000d5ib8c-1.jpg",
       price: "1.950.000 VND",
       brand: "vans",
+      sale: true,
+      hot: true,
     },
     {
       name: "Chuck 70 Plus",
@@ -240,6 +283,8 @@ document.addEventListener("DOMContentLoaded", function () {
         "https://www.converse.vn/media/catalog/product/cache/e81e4f913a1cad058ef66fea8e95c839/0/8/0882-CONA00916C005004-1.jpg",
       price: "2,500,000 VND",
       brand: "converse",
+      sale: false,
+      hot: true,
     },
     {
       name: "Run Star Motion CX Platform",
@@ -248,6 +293,8 @@ document.addEventListener("DOMContentLoaded", function () {
         "https://www.converse.vn/media/catalog/product/cache/e81e4f913a1cad058ef66fea8e95c839/0/8/0882-CONA03924C005006-1.jpg",
       price: "2,600,000 VND",
       brand: "converse",
+      sale: true,
+      hot: false,
     },
     {
       name: "Chuck 70",
@@ -256,6 +303,8 @@ document.addEventListener("DOMContentLoaded", function () {
         "https://www.converse.vn/media/catalog/product/cache/e81e4f913a1cad058ef66fea8e95c839/0/8/0882-CON162062C000004-1.jpg",
       price: "1,900,000 VND",
       brand: "converse",
+      sale: true,
+      hot: false,
     },
     {
       name: "Chuck Taylor All Star Easy-On Rainbows",
@@ -264,6 +313,8 @@ document.addEventListener("DOMContentLoaded", function () {
         "https://www.converse.vn/media/catalog/product/cache/e81e4f913a1cad058ef66fea8e95c839/0/8/0882-CONA04771C0PK012-1.jpg",
       price: "700,000 VND",
       brand: "converse",
+      sale: false,
+      hot: true,
     },
     {
       name: "Reebok Club C 85",
@@ -272,6 +323,8 @@ document.addEventListener("DOMContentLoaded", function () {
         "https://images.reebok.eu/reebok-club-c-85-shoes_19729666_44840525_1000.jpg?c=1",
       price: "2,490,000 VND",
       brand: "reebok",
+      sale: true,
+      hot: true,
     },
     {
       name: "Classic Leather SP Extra Sneakers",
@@ -280,6 +333,8 @@ document.addEventListener("DOMContentLoaded", function () {
         "https://images.reebok.eu/reebok-classic-leather-sp-extra-sneakers_22251500_52744723_1000.jpg?c=1",
       price: "2,390,000 VND",
       brand: "reebok",
+      sale: false,
+      hot: false,
     },
   ];
   menLink.addEventListener("click", function (event) {
@@ -315,62 +370,29 @@ document.addEventListener("DOMContentLoaded", function () {
     renderShoes(kidsShoes);
   });
 
+  saleLink.addEventListener("click", function (event) {
+    event.preventDefault();
+    console.log("Click vào liên kết 'Sale'");
+    const saleShoes = products.filter(
+      (product) =>
+        product.sale === true &&
+        ["nike", "adidas", "vans", "converse", "reebok"].includes(product.brand)
+    );
+    renderShoes(saleShoes);
+  });
+
+  hotLink.addEventListener("click", function (event) {
+    event.preventDefault();
+    console.log("Click vào liên kết 'hot'");
+    const hotShoes = products.filter(
+      (product) =>
+        product.hot === true &&
+        ["nike", "adidas", "vans", "converse", "reebok"].includes(product.brand)
+    );
+    renderShoes(hotShoes);
+  });
+
   renderShoes(products);
-
-  function renderShoes(shoes) {
-    const nikeList = document.getElementById("nike-product-list");
-    const adidasList = document.getElementById("adidas-product-list");
-    const vansList = document.getElementById("vans-product-list");
-    const converseList = document.getElementById("converse-product-list");
-    const reebokList = document.getElementById("reebok-product-list");
-
-    nikeList.innerHTML = "";
-    adidasList.innerHTML = "";
-    vansList.innerHTML = "";
-    converseList.innerHTML = "";
-    reebokList.innerHTML = "";
-
-    shoes.forEach((shoe) => {
-      const shoeDiv = document.createElement("div");
-      shoeDiv.className = "shoe";
-
-      shoeDiv.innerHTML = `
-        <img src="${shoe.image}" alt="${shoe.name}">
-        <h2>${shoe.name}</h2>
-        <p>${shoe.description}</p>
-        <p>${shoe.price}</p>
-        <button class="add-to-cart">Add To Cart</button>
-      `;
-
-      shoeDiv
-        .querySelector(".add-to-cart")
-        .addEventListener("click", function () {
-          addToCart(shoe);
-        });
-
-      switch (shoe.brand) {
-        case "nike":
-          nikeList.appendChild(shoeDiv);
-          break;
-        case "adidas":
-          adidasList.appendChild(shoeDiv);
-          break;
-        case "vans":
-          vansList.appendChild(shoeDiv);
-          break;
-        case "converse":
-          converseList.appendChild(shoeDiv);
-          break;
-        case "reebok":
-          reebokList.appendChild(shoeDiv);
-          break;
-        default:
-          console.error(
-            "Không tìm thấy danh mục sản phẩm cho thương hiệu này."
-          );
-      }
-    });
-  }
 
   clearCartBtn.addEventListener("click", function () {
     clearCart();
@@ -478,6 +500,29 @@ document.addEventListener("DOMContentLoaded", function () {
     renderShoes(kidsShoes);
   });
 
+  saleLink.addEventListener("click", function (event) {
+    event.preventDefault();
+    console.log("Click vào liên kết 'Sale'");
+    const saleShoes = products.filter(
+      (product) =>
+        product.sale === true &&
+        ["nike", "adidas", "vans", "converse", "reebok"].includes(product.brand)
+    );
+    renderShoes(saleShoes);
+  });
+
+  hotLink.addEventListener("click", function (event) {
+    event.preventDefault();
+    console.log("Click vào liên kết 'hot'");
+    const hotShoes = products.filter(
+      (product) =>
+        product.hot === true &&
+        ["nike", "adidas", "vans", "converse", "reebok"].includes(product.brand)
+    );
+    renderShoes(hotShoes);
+  });
+
+
   renderShoes(products);
   updateCartQuantity();
 
@@ -500,11 +545,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
       shoeDiv.innerHTML = `
         <img src="${shoe.image}" alt="${shoe.name}">
-        <h2>${shoe.name}</h2>
-        <p>${shoe.description}</p>
-        <p>${shoe.price}</p>
-        <br>
-        <button class="add-to-cart">Add To Cart</button>
+          <h2>${shoe.name}</h2>
+          <p>${shoe.description}</p>
+          <p class="price">${shoe.price}</p>
+           ${shoe.sale ? '<p class="sale">Sale!</p>' : ""}
+           ${shoe.hot ? '<p class="hot">HOT!</p>' : ""}
+          <button class="add-to-cart">Add To Cart</button>
+
       `;
 
       shoeDiv
@@ -665,18 +712,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function isUserLoggedIn() {
     return localStorage.getItem("logged_in") === "true";
-}
+  }
   function addToCart(product) {
     if (!isUserLoggedIn()) {
-        alert("Vui lòng đăng nhập để thêm sản phẩm vào giỏ hàng.");
-        return;
+      alert("Vui lòng đăng nhập để thêm sản phẩm vào giỏ hàng.");
+      return;
     }
 
     let cart = localStorage.getItem("cart");
     if (!cart) {
-        cart = [];
+      cart = [];
     } else {
-        cart = JSON.parse(cart);
+      cart = JSON.parse(cart);
     }
 
     cart.push(product);
@@ -684,5 +731,5 @@ document.addEventListener("DOMContentLoaded", function () {
     alert(`Đã thêm ${product.name} vào giỏ hàng!`);
     updateCartQuantity();
     displayCart();
-}
+  }
 });
