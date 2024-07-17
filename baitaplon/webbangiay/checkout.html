@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            outline: none;
+        }
+        a {
+            text-decoration: none;
+        }
+        .container {
+            width: 100vw;
+            height: 100vh;
+            background: rgb(209, 209, 209);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .paymentForm {
+            width: 300px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 10px;
+            padding: 40px 30px;
+            border: solid black;
+        }
+        .paymentForm h1 {
+            margin-bottom: 40px;
+        }
+        .paymentForm button {
+            height: 40px;
+            width: 100%;
+            margin-bottom: 30px;
+            background-color: rgb(248, 183, 181);
+            border-radius: 30px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+        .formText {
+            margin-bottom: 40px;
+            position: relative;
+        }
+        .formText input {
+            width: 93%;
+            height: 35px;
+            border: none;
+            border-bottom: 2px solid #ccc;
+            cursor: pointer;
+        }
+        .formText label {
+            position: absolute;
+            left: 10px;
+            bottom: 12px;
+            transition: 0.3s;
+        }
+        .formText input:focus + label,
+        .formText input:not(:placeholder-shown) + label {
+            transform: translateY(-30px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form class="paymentForm" id="paymentForm">
+            <h1>Payment Page</h1>
+            <div class="formText">
+                <input type="text" id="customerName" name="customerName" placeholder=" " required />
+                <label for="customerName">Customer Name</label>
+            </div>
+            <div class="formText">
+                <input type="email" id="customerEmail" name="customerEmail" placeholder=" " required />
+                <label for="customerEmail">Customer Email</label>
+            </div>
+            <div class="formText">
+                <input type="text" id="customerAddress" name="customerAddress" placeholder=" " required />
+                <label for="customerAddress">Customer Address</label>
+            </div>
+            <button type="button" onclick="submitPayment()">Pay Now</button>
+            <button type="button" onclick="goToIndex()">Back to Index</button>
+        </form>
+    </div>
+    <script>
+        function submitPayment() {
+    const name = document.getElementById('customerName').value;
+    const email = document.getElementById('customerEmail').value;
+    const address = document.getElementById('customerAddress').value;
+
+    if (name && email && address) {
+        const cart = JSON.parse(localStorage.getItem('cart')) || [];
+        const orders = JSON.parse(localStorage.getItem('orders')) || [];
+
+        const newOrder = {
+            customerName: name,
+            customerEmail: email,
+            customerAddress: address,
+            items: cart,
+            status: 'Pending'
+        };
+        orders.push(newOrder);
+        localStorage.setItem('orders', JSON.stringify(orders));
+        alert('Thanh toán thành công!');
+    } else {
+        alert('Vui lòng điền đầy đủ thông tin.');
+    }
+}
+
+    </script>
+</body>
+</html>

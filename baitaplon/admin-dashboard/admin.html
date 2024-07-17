@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - NauSneaker</title>
+    <link rel="stylesheet" href="./admin.css">
+</head>
+<body>
+    <header class="header">
+        <a href="" class="logo">
+            <i class="fa-solid fa-shoe-prints"></i>
+            NauSneaker Admin
+        </a>
+        <nav class="navbar">
+            <a href="#products" id="products-link">Sản phẩm</a>
+            <a href="#orders" id="orders-link">Đơn hàng</a>
+            <a href="#users" id="users-link">Khách hàng</a>
+            <a href="loginad.html" id="logout-link">Đăng xuất</a>
+        </nav>
+    </header>
+
+    <div id="products" class="section">
+        <h1>Quản lý sản phẩm</h1>
+        <button onclick="addProduct()">Thêm sản phẩm</button>
+        <table>
+            <thead>
+                <tr>
+                    <th>Hình ảnh</th>
+                    <th>Tên SP</th>
+                    <th>Giá</th>
+                    <th>Thương hiệu</th>
+                    <th>Hành động</th>
+                </tr>
+            </thead>
+            <tbody id="productList">
+            </tbody>
+        </table>
+    </div>
+
+    <div id="orders" class="section">
+        <h1>Quản lý đơn hàng</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Mã đơn hàng</th>
+                    <th>khách hàng</th>
+                    <th>Trạng thái</th>
+                    <th>Hành động</th>
+                </tr>
+            </thead>
+            <tbody id="orderList">
+            </tbody>
+        </table>
+    </div>
+    <div id="users" class="section">
+        <h1>Quản lý người dùng</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Mã người dùng</th>
+                    <th>Tên người dùng</th>
+                    <th>Email</th>
+                    <th>Hành động</th>
+                </tr>
+            </thead>
+            <tbody id="userList">
+              </tbody>
+        </table>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>

@@ -19,10 +19,10 @@
           <input type="password" id="password" />
         </div>
         <button type="button" onclick="login()">Đăng nhập</button>
-        <span
-          >Chưa có tài khoản? Vui lòng đăng ký
-          <a href="./signup.html">tại đây</a></span
-        >
+        <span>
+          Chưa có tài khoản? Vui lòng đăng ký
+          <a href="./signup.html">tại đây</a>
+        </span>
       </form>
     </div>
 
@@ -44,20 +44,17 @@
       });
 
       function login() {
-        const username = document.getElementById("username").value;
-        const password = document.getElementById("password").value;
+        const username = document.getElementById("username").value.trim();
+        const password = document.getElementById("password").value.trim();
+        const storedAccounts =
+          JSON.parse(localStorage.getItem("account_login")) || [];
+        const user = storedAccounts.find(
+          account => account.username === username && account.password === password
+        );
 
-        // Lấy thông tin tài khoản từ localStorage
-        const storedAccount =
-          JSON.parse(localStorage.getItem("account_login")) || {};
-
-        // Kiểm tra xem tài khoản có tồn tại và thông tin đăng nhập có đúng không
-        if (
-          storedAccount.username === username &&
-          storedAccount.password === password
-        ) {
+        if (user) {
           alert("Đăng nhập thành công!");
-          localStorage.setItem("logged_in", "true"); // Đánh dấu đã đăng nhập
+          localStorage.setItem("logged_in", "true");
           window.location.href = "index.html";
         } else {
           alert("Tên đăng nhập hoặc mật khẩu không chính xác!");
