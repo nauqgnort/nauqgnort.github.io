@@ -276,16 +276,17 @@ function loadOrders() {
     const row = document.createElement("tr");
 
     row.innerHTML = `
-          <td>${index + 1}</td>
-          <td>${order.customerName}</td>
-          <td>${order.status || "Đang chờ xác nhận"}</td>
-          <td class="actions">
-              <button onclick="updateOrderStatus(${index}, 'Đang chờ xác nhận')">Đang chờ xác nhận</button>
-              <button onclick="updateOrderStatus(${index}, 'Đang giao')">Đang giao</button>
-              <button onclick="updateOrderStatus(${index}, "Đã giao")">Đã giao</button>
-              <button onclick="deleteOrder(${index})">Xóa</button>
-          </td>
-      `;
+    <td>${index + 1}</td>
+    <td>${order.customerName}</td>
+    <td>${order.status || "Đang chờ xác nhận"}</td>
+    <td class="actions">
+        <button onclick="updateOrderStatus(${index}, 'Đang chờ xác nhận')">Đang chờ xác nhận</button>
+        <button onclick="updateOrderStatus(${index}, 'Đang giao')">Đang giao</button>
+        <button onclick="updateOrderStatus(${index}, 'Đã giao')">Đã giao</button>
+        <button onclick="deleteOrder(${index})">Xóa</button>
+    </td>
+`;
+
 
     orderList.appendChild(row);
   });
